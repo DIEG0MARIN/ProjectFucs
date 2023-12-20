@@ -16,3 +16,4 @@ class Prestamos(models.Model):
     def __str__(self): 
         text = "{0} {1}"
         return text.format(self.id ,self.nombres)
+

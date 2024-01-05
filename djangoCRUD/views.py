@@ -5,3 +5,4 @@ from.models import Prestamos
 
 def home(request):
     prestamos = Prestamos.objects.all()
+    return render(request, 'index.html', {'Prestamos': prestamos})
